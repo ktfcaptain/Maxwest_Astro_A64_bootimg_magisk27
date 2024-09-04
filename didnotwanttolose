@@ -1,1 +1,7 @@
 still need twrp
+
+Android 13
+
+kernel 4.19 (KernelSU not officially supported, can build for 4.14+)
+
+Spent a few days with no sleep figuring this out.  Not a ton of work, I'm just not smart.
