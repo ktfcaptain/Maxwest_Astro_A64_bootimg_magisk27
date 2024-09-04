@@ -1,0 +1,89 @@
+- Device platform: arm64-v8a
+- Installing: 27.0 (27000)
+- Copying image to cache
+- Unpacking boot image
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [2]
+KERNEL_SZ       [11964561]
+RAMDISK_SZ      [11522169]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [0]
+DTB_SZ          [100249]
+OS_VERSION      [12.0.0]
+OS_PATCH_LEVEL  [2023-11]
+PAGESIZE        [2048]
+NAME            [8149WQ_P10]
+CMDLINE         [bootopt=64S3,32N2,64N2 buildvariant=user]
+CHECKSUM        [dc156ef212d28daafad7758cfbc3ca65ed31cffd000000000000000000000000]
+KERNEL_FMT      [gzip]
+RAMDISK_FMT     [gzip]
+unexpected ASN.1 DER tag: expected SEQUENCE, got APPLICATION [1] (primitive)
+VBMETA
+- Checking ramdisk status
+Loading cpio: [ramdisk.cpio]
+- Stock boot image detected
+- Patching ramdisk
+- Pre-init storage partition: md_udc
+Loading cpio: [ramdisk.cpio]
+Add file [init] (100750)
+Create directory [overlay.d] (0750)
+Create directory [overlay.d/sbin] (0750)
+Add file [overlay.d/sbin/magisk32.xz] (100644)
+Add file [overlay.d/sbin/magisk64.xz] (100644)
+Add file [overlay.d/sbin/stub.xz] (100644)
+Patch with flag KEEPVERITY=[true] KEEPFORCEENCRYPT=[true]
+Loading cpio: [ramdisk.cpio.orig]
+Backup [init] -> [.backup/init]
+Record new entry: [overlay.d] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/magisk32.xz] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/magisk64.xz] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/stub.xz] -> [.backup/.rmlist]
+Create directory [.backup] (0000)
+Add file [.backup/.magisk] (100000)
+Dumping cpio: [ramdisk.cpio]
+Loading dtbs from [dtb]
+Loading dtbs from [dtb]
+- Repacking boot image
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [2]
+KERNEL_SZ       [11964561]
+RAMDISK_SZ      [11522169]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [0]
+DTB_SZ          [100249]
+OS_VERSION      [12.0.0]
+OS_PATCH_LEVEL  [2023-11]
+PAGESIZE        [2048]
+NAME            [8149WQ_P10]
+CMDLINE         [bootopt=64S3,32N2,64N2 buildvariant=user]
+CHECKSUM        [dc156ef212d28daafad7758cfbc3ca65ed31cffd000000000000000000000000]
+KERNEL_FMT      [gzip]
+RAMDISK_FMT     [gzip]
+unexpected ASN.1 DER tag: expected SEQUENCE, got APPLICATION [1] (primitive)
+VBMETA
+Repack to boot image: [new-boot.img]
+HEADER_VER      [2]
+KERNEL_SZ       [11964561]
+RAMDISK_SZ      [12021359]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [0]
+DTB_SZ          [100249]
+OS_VERSION      [12.0.0]
+OS_PATCH_LEVEL  [2023-11]
+PAGESIZE        [2048]
+NAME            [8149WQ_P10]
+CMDLINE         [bootopt=64S3,32N2,64N2 buildvariant=user]
+CHECKSUM        [6a40e5120de02a6d2cf99164e529d5fdd447b2a2000000000000000000000000]
+
+****************************
+ Output file is written to 
+ /storage/emulated/0/Download/magisk_patched-27000_A39Z3.img 
+****************************
+cp: can't preserve ownership of 'busybox': Operation not permitted
+cp: can't preserve ownership of 'magisk32': Operation not permitted
+cp: can't preserve ownership of 'magisk64': Operation not permitted
+cp: can't preserve ownership of 'magiskboot': Operation not permitted
+cp: can't preserve ownership of 'magiskinit': Operation not permitted
+cp: can't preserve ownership of 'magiskpolicy': Operation not permitted
+- All done!
